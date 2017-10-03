@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans');
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: lightgrey;
+  font-family: 'Open Sans',sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  padding: 0;
+  margin: 0;
+  text-decoration: inherit;
+  color: inherit;
+  font-weight: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+}
+
+.half-flex{
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+}
+
+.vertical-center-flex{
+  align-items: center;
+}
+
+.horizontal-center-flex{
+  justify-content: center;
+}
+
+.horizontal-flex-end{
+  justify-content: flex-end;
+}
+
+.horizontal-flex-start{
+  justify-content: flex-start;
+}
+
+.displayed{
+  display: block;
+}
+
+.no-displayed{
+  display: none;
+}
+
+.light-font{
+  font-weight: 200;
+}

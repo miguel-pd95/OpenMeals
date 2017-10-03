@@ -1,0 +1,110 @@
+.in-topBar{
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color:#ffca28;
+  color: black;
+  box-sizing: border-box;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 5s ease-out;
+  font-weight: 200;
+}
+
+.in-top-menu-btn{
+  height: 35%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 2.5%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+.in-setting{
+  width: 15%;
+  height: auto;
+  background-color: #ECEFF1;
+  position: fixed;
+  top: 2.5px;
+  right: 2.5px;
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.in-setting-bar{
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 3.5%;
+  padding-right: 2%;
+  display: flex;
+}
+
+.in-settingMenu{
+  height: 38%;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 2%;
+  margin-right: 1.5%;
+  cursor: pointer;
+}
+
+.in-setting-wrapper{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.in-setting-item{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 5%;
+  cursor: pointer;
+}
+
+.in-setting-item:hover{
+  background-color: #CFD8DC;
+}
+
+.in-mainWrapper{
+  height: calc(100vw - 30px);
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 54px;
+  padding-top: 2.5%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.inPlaceHolder{
+  width: 500px;
+  height: 400px;
+  margin: 15px;
+  background-color: #ECEFF1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  transition: all 0.6s cubic-bezier(.25,.8,.25,1);
+}
+
+.inPlaceHolder:hover{
+   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.inPlaceHolder h2,h5{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}

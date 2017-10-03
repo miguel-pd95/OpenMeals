@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="openMeals">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="app/angular.min.js"></script>
+    <script type="text/javascript" src="app/otro.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Open Meals</title>
+  </head>
+  <body>
+    <div class="in-topBar" ng-controller="topBar-con">
+      <div class="half-flex vertical-center-flex">
+        <h1 class="light-font">{{title}}</h1>
+      </div>
+      <div class="half-flex vertical-center-flex horizontal-flex-end">
+        <h4 class="light-font">{{date}}</h4>
+        <img class="in-top-menu-btn" src="css/res/three-dots-menu.svg" alt="menu" ng-click="openMenu()">
+      </div>
+      <div class="in-setting no-displayed" id="in-top-settings">
+        <div class="in-setting-bar vertical-center-flex horizontal-flex-end">
+          <img class="in-settingMenu" src="css/res/three-dots-menu.svg" alt="menu" ng-click="closeMenu()">
+        </div>
+          <div class="in-setting-wrapper">
+            <div class="in-setting-item">
+              <h4>Profile</h3>
+            </div>
+            <div class="in-setting-item">
+              <h4>Settings</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="in-mainWrapper" ng-controller="in-wrapper">
+      <div class="inPlaceHolder">
+        <h3>{{recipe1.name}}</h3>
+        <h4>T:{{recipe1.time}}, S:{{recipe1.servings}}, C:{{recipe1.calories}}</h4>
+        <ul>
+          <li ng-repeat="ingredient in recipe1.ingredients">{{ingredient.qty}} {{ingredient.unit}} of {{ingredient.name}}</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
